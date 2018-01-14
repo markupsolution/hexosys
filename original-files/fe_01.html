@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fe_01_style.css" type="text/css" />
+</head>
+<body>
+    <div class="content">
+        <div id="response-message" class="message">response message here</div>
+        <div class="datagrid">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John Smith</td>
+                    <td>31</td>
+                    <td>Male</td>
+                    <td>
+                        <a href="javascript:;" data-id="1">view</a>
+                        <a href="javascript:;" data-id="1">remove</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sara Johnson</td>
+                    <td>29</td>
+                    <td>Female</td>
+                    <td>
+                        <a href="javascript:;" data-id="2">view</a>
+                        <a href="javascript:;" data-id="2">remove</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+    var App = function(){
+        var url = 'api';
+
+        function view(event) {
+            var id = '??'; //please determine the id
+            $.ajax({
+                url: url + '/view/' +id,
+                data: data
+            }).done( function (data){
+
+            });
+        }
+
+        function remove(event) {
+            var id = '??'; //please determine the id
+            $.ajax({
+                url: url + '/remove/' + id ,
+                data: data
+            }).done( function (data){
+
+            });
+        }
+
+        function initialize() {
+            //
+        }
+
+        return {
+            //
+        }
+
+    }();
+
+    $(function () {
+
+    });
+</script>
+</body>
+</html>

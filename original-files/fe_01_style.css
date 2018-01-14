@@ -1,0 +1,45 @@
+body {
+    background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+table {
+    border: 1px solid #3e3e3e;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 5px 10px;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+
+td:last-of-type{
+    border-right: none;
+}
+
+table a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #3e3e3e;
+}
+
+.message {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+.success {
+    background: greenyellow;
+}
+
+.failed {
+    background: red;
+    color: #fff;
+}
+
+#response-message {
+
+}

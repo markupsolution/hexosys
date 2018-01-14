@@ -1,0 +1,138 @@
+
+body {
+    background: #f3f3f3;
+    font-family: $font_default;
+    font-size: $font_size_regular;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    border: 1px solid #3e3e3e;
+    border-spacing: 0px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+td {
+    padding: 5px 10px;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+
+td:first-child { 
+    width: 30px; 
+    text-align: center; 
+}
+
+td:last-of-type{
+    border-right: none;
+}
+
+tr:first-child td {
+    font-weight: 600;
+}
+
+table {
+    a {
+        font-family: $font_secondary;
+        font-size: 14px;
+        color: #3e3e3e;
+    }
+}
+
+.message {
+    font-family: $font_secondary;
+    font-size: $font_size_large;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success {
+    background: $success_background;
+}
+
+.failed {
+    background: $error_background;
+    color: #fff;
+}
+
+#response-message {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    @include rounded(5px);
+    padding: 4px 6px;
+    background-color: #fff;
+    text-decoration: none;
+    line-height: 14px;
+    border:1px solid #000;
+}
+
+.popup-mask {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.popup {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 15px 20px;
+    z-index: 3;
+    @include rounded(12px);
+    box-sizing: border-box;
+    display: none;
+}
+.popup {
+    h3 {
+        margin: 0 0 15px;
+        font-size: $font_size_large;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #ddd;
+        font-weight: 400;
+    }
+}
+.user-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.user-info {
+    > li {
+        line-height: 20px;
+        font-size: $font_size_medium;
+        margin: 0 0 5px;
+    }
+}
+.popup-close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    @include rounded(12px);
+    border: 1px solid #000;
+    text-decoration: none;
+    right: -7px;
+    top: -7px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 24px;
+    font-size: $font_size_medium;
+    color: #000;
+}
